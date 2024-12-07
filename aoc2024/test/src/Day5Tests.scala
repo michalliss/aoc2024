@@ -10,7 +10,6 @@ object Day5Tests extends ZIOSpecDefault {
 
   val example  = (ZStream.fromResource("day5/example.txt")).orDie
   val data     = (ZStream.fromResource("day5/data.txt")).orDie
-  val example2 = (ZStream.fromResource("day5/example2.txt")).orDie
 
   def spec = suite("Day 5")(
     suite("Part 1")(

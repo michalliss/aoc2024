@@ -1,10 +1,8 @@
 package aoc2024
 
 import fastparse.*
-import fastparse.Parsed.Failure
-import fastparse.Parsed.Success
+import fastparse.Parsed.{Failure, Success}
 import zio.*
-import zio.Config.Bool
 import zio.stream.*
 
 import NoWhitespace.*

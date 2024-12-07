@@ -1,8 +1,12 @@
 import mill._
 import mill.scalalib._
+import $ivy.`com.goyeau::mill-scalafix::0.4.2`
+import com.goyeau.mill.scalafix.ScalafixModule
+import scalafmt._
 
-object aoc2024 extends ScalaModule {
-  def scalaVersion       = "3.5.2"
+object aoc2024 extends ScalaModule with ScalafixModule with ScalafmtModule {
+  def scalaVersion  = "3.5.2"
+  def scalacOptions = Seq("-Wunused:all")
 
   def ivyDeps = Agg(
     ivy"dev.zio::zio:2.1.13",

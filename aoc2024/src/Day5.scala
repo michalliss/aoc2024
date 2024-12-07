@@ -1,18 +1,15 @@
 package aoc2024
 
 import fastparse.*
-import fastparse.Parsed.Failure
-import fastparse.Parsed.Success
+import fastparse.Parsed.{Failure, Success}
+import scalax.collection.edges.DiEdgeImplicits
+import scalax.collection.immutable.Graph
 import zio.*
 import zio.stream.*
 
-import NoWhitespace.*
 import java.io.InputStream
 
-import scalax.collection.edges.~>
-import scalax.collection.edges.labeled._
-import scalax.collection.edges.DiEdgeImplicits
-import scalax.collection.immutable.Graph
+import NoWhitespace.*
 
 object Day5 {
   case class Rule(number: Int, successor: Int)

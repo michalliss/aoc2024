@@ -1,12 +1,11 @@
 package aoc2024
 
+import fastparse.*
+import fastparse.Parsed.{Failure, Success}
 import zio.*
 import zio.stream.*
-import fastparse._
 
-import NoWhitespace._
-import fastparse.Parsed.Success
-import fastparse.Parsed.Failure
+import NoWhitespace.*
 
 object Day1 {
 
