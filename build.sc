@@ -8,7 +8,8 @@ object aoc2024 extends ScalaModule {
     ivy"dev.zio::zio:2.1.13",
     ivy"dev.zio::zio-streams:2.1.13",
     ivy"com.lihaoyi::fastparse:3.1.1",
-    ivy"com.lihaoyi::os-lib:0.11.3"
+    ivy"com.lihaoyi::os-lib:0.11.3",
+    ivy"org.scala-graph::graph-core:2.0.2"
   )
 
   object test extends ScalaTests with TestModule.ZioTest {
