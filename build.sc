@@ -5,8 +5,8 @@ import com.goyeau.mill.scalafix.ScalafixModule
 import scalafmt._
 
 object aoc2024 extends ScalaModule with ScalafixModule with ScalafmtModule {
-  def scalaVersion  = "3.5.2"
-  def scalacOptions = Seq("-Wunused:all")
+  def scalaVersion  = "3.6.2"
+  def scalacOptions = Seq("-Wunused:all", "-experimental", "-language:experimental.namedTuples")
 
   def ivyDeps = Agg(
     ivy"dev.zio::zio:2.1.13",
